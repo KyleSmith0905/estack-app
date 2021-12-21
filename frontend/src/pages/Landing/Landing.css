@@ -34,6 +34,7 @@
 
 .shadow-container-image > img {
 	height: 100%;
+	width: 100%;
 	border: 1px solid #97d2fc;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 	border-radius: 20px;
@@ -120,4 +121,15 @@
 	width: 100vw;
 	padding: 0;
 	margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+	.section {
+		flex-direction: column;
+	}
+
+	.shadow-container, .shadow-container-image {
+		width: 80%;
+		margin: 0.5em auto;
+	}
 }
