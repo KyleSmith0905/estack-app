@@ -77,6 +77,7 @@
 	color: rgba(32, 115, 249, 1);
 	font-family: "DM Sans", sans-serif;
 	font-weight: 700;
+	text-align: center;
 }
 
 .break {
@@ -146,5 +147,19 @@
 	.shadow-container, .shadow-container-image {
 		width: 80%;
 		margin: 0.5em auto;
+	}
+
+	.section-title > h2 {
+		width: 60%;
+	}
+
+	.break {
+		width: 75%;
+	}
+}
+
+@media only screen and (max-width: 250px) {
+	.review-star-container{
+		display: none;
 	}
 }

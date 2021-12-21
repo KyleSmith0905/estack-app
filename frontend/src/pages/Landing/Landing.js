@@ -51,7 +51,7 @@ function Landing() {
 					<div className="landing-middle-container">
 						<div className="section-title">
 							<Break />
-							<p>Our Pleasure to Help you in</p>
+							<h2>Our Pleasure to Help you in</h2>
 							<Break />
 						</div>
 
@@ -65,7 +65,7 @@ function Landing() {
 					<div className="landing-middle-container">
 						<div className="section-title">
 							<Break />
-							<p>Why Choose Us?</p>
+							<h2>Why Choose Us?</h2>
 							<Break />
 						</div>
 
@@ -99,7 +99,7 @@ function Landing() {
 					<div className="landing-middle-container">
 						<div className="section-title">
 							<Break />
-							<p>What People Say About Us</p>
+							<h2>What People Say About Us</h2>
 							<Break />
 						</div>
 
