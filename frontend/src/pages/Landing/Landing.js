@@ -114,7 +114,7 @@ function Landing() {
 									<p className="text">
 										“This page helped me find my dream home”
 									</p>
-									<div className="flex-row flex-center">
+									<div className="review-star-container">
 										<img src={StarImage} alt="star" />
 										<img src={StarImage} alt="star" />
 										<img src={StarImage} alt="star" />
@@ -134,7 +134,7 @@ function Landing() {
 									<p className="text">
 										“Made it easy to find my new place”
 									</p>
-									<div className="flex-row flex-center">
+									<div className="review-star-container">
 										<img src={StarImage} alt="star" />
 										<img src={StarImage} alt="star" />
 										<img src={StarImage} alt="star" />
@@ -154,7 +154,7 @@ function Landing() {
 									<p className="text">
 										“This page helped me find my dream home”
 									</p>
-									<div className="flex-row flex-center">
+									<div className="review-star-container">
 										<img src={StarImage} alt="star" />
 										<img src={StarImage} alt="star" />
 										<img src={StarImage} alt="star" />

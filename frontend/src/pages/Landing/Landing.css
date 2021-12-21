@@ -123,7 +123,22 @@
 	margin: 0;
 }
 
-@media only screen and (max-width: 800px) {
+.review-star-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-bottom: 0.2em;
+	margin-left: -0.8em;
+	width: 90%;
+}
+
+.review-star-container > img {
+	max-width: 2.5em;
+	width: calc(18% - 0.05em);
+	margin-left: 0.15em;
+}
+
+@media only screen and (max-width: 850px) {
 	.section {
 		flex-direction: column;
 	}
