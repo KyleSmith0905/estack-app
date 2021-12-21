@@ -36,7 +36,7 @@ const ShadowContainerImage = ({ src, text }) => {
 
 
 const ShadowContainer = ({ children, className }) => {
-	return <div className={`shadow-container ${className}`}>{children}</div>;
+	return <div className={`shadow-container ${className ?? ''}`}>{children}</div>;
 };
 
 function Landing() {
