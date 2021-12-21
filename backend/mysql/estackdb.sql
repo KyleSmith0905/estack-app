@@ -20,9 +20,9 @@ fname VARCHAR(100),
 lname VARCHAR(100),
 birthdate DATE,
 street VARCHAR(200),
-city VARCHAR(40),
-state VARCHAR(20),
-zip_code VARCHAR(10),
+city VARCHAR(85),
+state CHAR(2) CHECK(length(state) = 2),
+zip_code CHAR(5) CHECK(length(Zip_Code) = 5),
 PRIMARY KEY (email),
 unique key (street, city, state, zip_code),
 unique key(uname)
@@ -58,8 +58,8 @@ PRIMARY KEY (email)
 
 create table properties (
     -- address
-    street VARCHAR(50) NOT NULL,
-    city VARCHAR(50) NOT NULL,
+    street VARCHAR(200) NOT NULL,
+    city VARCHAR(85) NOT NULL,
     state CHAR(2) NOT NULL CHECK(length(State) = 2),
     zip CHAR(5) NOT NULL CHECK(length(Zip) = 5),
 
