@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import './Landing.css';
 import RegisterAndLoginDialog from '../../components/RegisterAndLoginDialog/RegisterAndLoginDialog';
 import Footer from '../../components/Footer/Footer';
-import Buy from './assets/buy.svg';
-import Rent from './assets/rent.svg';
-import Sell from './assets/sell.svg';
+import Buy from './assets/buy.jpg';
+import Rent from './assets/rent.jpg';
+import Sell from './assets/sell.jpg';
 import WhyUs1 from './assets/why-us-1.svg';
 import WhyUs2 from './assets/why-us-2.svg';
 import WhyUs3 from './assets/why-us-3.svg';
@@ -22,6 +22,18 @@ const Break = () => {
 		</div>
 	);
 };
+
+const ShadowContainerImage = ({ src, text }) => {
+	return (
+		<div className='shadow-container-image'>
+			<img src={src} alt={text}>
+			</img>
+			<div className='gradient-cover'/>
+			<p>{text}</p>
+		</div>
+	);
+};
+
 
 const ShadowContainer = ({ children, className }) => {
 	return <div className={`shadow-container ${className}`}>{children}</div>;
@@ -44,15 +56,9 @@ function Landing() {
 						</div>
 
 						<div className="section">
-							<ShadowContainer>
-								<img src={Buy} alt="buy" />
-							</ShadowContainer>
-							<ShadowContainer>
-								<img src={Rent} alt="rent" />
-							</ShadowContainer>
-							<ShadowContainer>
-								<img src={Sell} alt="sell" />
-							</ShadowContainer>
+							<ShadowContainerImage src={Buy} text="Buy"/>
+							<ShadowContainerImage src={Rent} text="Rent"/>
+							<ShadowContainerImage src={Sell} text="Sell"/>
 						</div>
 					</div>
 

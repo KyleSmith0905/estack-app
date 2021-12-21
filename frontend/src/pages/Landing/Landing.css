@@ -26,6 +26,41 @@
 	width: 20%;
 }
 
+.shadow-container-image {
+	position: relative;
+	width: 20%;
+	height: 10em;
+}
+
+.shadow-container-image > img {
+	height: 100%;
+	border: 1px solid #97d2fc;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.shadow-container-image > p {
+	position: absolute;
+	bottom: 0.2em;
+	width: 100%;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	text-shadow: 0em 0.1em 0.15em #000000;
+}
+
+.shadow-container-image > .gradient-cover {
+	position: absolute;
+	bottom: 0em;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	background: linear-gradient(transparent 60%, #000000 82%);
+	mix-blend-mode: overlay;
+}
+
 .section {
 	display: flex;
 	flex-direction: row;
